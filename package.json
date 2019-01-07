@@ -4,5 +4,22 @@
   "description": "",
   "keywords": [],
   "license": "MIT",
-  "author": "airt <airtial@gmail.com>"
+  "author": "airt <airtial@gmail.com>",
+  "dependencies": {
+    "serve": "^10.0.0"
+  },
+  "devDependencies": {
+    "pkg": "^4.0.0"
+  },
+  "bin": "node_modules/serve/bin/serve.js",
+  "pkg": {
+    "targets": [
+      "node10-win-x64",
+      "node10-macos-x64",
+      "node10-linux-x64"
+    ]
+  },
+  "scripts": {
+    "build": "pkg . --out-path out"
+  }
 }
